@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-
+import "../styles/navbar.css";
 import {useState} from "react"
 
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -49,54 +49,54 @@ let product=[
             "Best Legal Case Management Software for Law Firms"]
 
 function Footer(){
-    const [prod,setProd]=useState(product);
+    const [prod]=useState(product);
     const [reso]=useState(resorcess);
     const [madeFor]=useState(made);
     const [trustFor]=useState(trust);
     const [comp]=useState(COMPARISIONS);
     const [Blog]=useState(blog);
     return (
-        <Box>
-        <Box w='95%' p={4} m="auto" display="flex" alignItems="start" justifyContent="space-between">
+        <Box className="footer">
+        <Box w='94%' p={4} m="auto" display="flex" alignItems="start" justifyContent="space-between">
 <Box align="start" display="flex" flexDirection="column" gap="15px">
-    <h6 style={{color:"#00baab", fontSize:"16px"}}>PRODUCT</h6>
+    <h6 style={{color:"#00baab", fontSize:"18px" ,fontWeight:"500"}}>PRODUCT</h6>
     {prod.map((el)=>{
         return <p>{el}</p>
     })}
 </Box>
 <Box align="start" display="flex" flexDirection="column" gap="15px" >
-    <h6 style={{color:"#00baab", fontSize:"16px"}}>RESOURCES</h6>
+    <h6 style={{color:"#00baab", fontSize:"16px" ,fontWeight:"500"}}>RESOURCES</h6>
     {reso.map((el)=>{
         return <p>{el}</p>
     })}
 </Box>
 <Box align="start" display="flex" flexDirection="column" gap="15px">
-    <h6 style={{color:"#00baab", fontSize:"16px"}}>MADE FOR</h6>
+    <h6 style={{color:"#00baab", fontSize:"16px" ,fontWeight:"500"}}>MADE FOR</h6>
     {madeFor.map((el)=>{
         return <p>{el}</p>
     })}
 </Box>
 <Box align="start" display="flex" flexDirection="column" gap="15px">
-    <h6 style={{color:"#00baab", fontSize:"16px"}}>TRUST FOR</h6>
+    <h6 style={{color:"#00baab", fontSize:"16px" ,fontWeight:"500"}}>TRUST FOR</h6>
     {trustFor.map((el)=>{
         return <p>{el}</p>
     })}
 </Box>
 <Box align="start"display="flex" flexDirection="column" gap="15px">
-    <h6 style={{color:"#00baab", fontSize:"16px"}}>COMPARISIONS</h6>
+    <h6 style={{color:"#00baab", fontSize:"16px" ,fontWeight:"500"}}>COMPARISIONS</h6>
     {comp.map((el)=>{
         return <p>{el}</p>
     })}
 </Box>
 <Box align="start" display="flex" flexDirection="column" gap="15px" w="20%">
-    <h6 style={{color:"#00baab", fontSize:"16px"}}>BLOG</h6>
+    <h6 style={{color:"#00baab", fontSize:"16px" ,fontWeight:"500"}}>BLOG</h6>
     {Blog.map((el)=>{
         return <p>{el}</p>
     })}
 </Box>
 
         </Box>
-        <Box  display="flex" justifyContent="space-between" w='95%' p={4} m="auto" mt="20px">
+        <Box  display="flex" justifyContent="space-between" w='94%' p={4} m="auto" mt="20px">
         <Box display="flex" gap="25px">
              <img src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" alt="niftypm" width="100px" heigth="100px"  />
              <p style={{color:"#929fb2"}}> 2022 © Nifty Technologies, Inc. All rights reserved.</p>

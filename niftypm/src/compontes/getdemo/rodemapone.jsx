@@ -5,7 +5,7 @@ import {
 } from "@chakra-ui/react";
 
 import { useState,useEffect } from "react";
-
+import "./roadmap.css"
 import Roadmaping from "./roadmapingone";
 const Road=[
    {heading:"Set Goals & Timelines",
@@ -57,16 +57,16 @@ useEffect(()=>{
           borderRadius={"15px"}
           bgGradient="linear(to-r, blue.100, pink.100)"
         >
-          <Box display="flex" justifyContent="center" alignItems={"cneter"} gap="20px" fontWeight="600" fontSize="20px">
-            <Text className="temp" cursor="pointer" onClick={()=>{setMap(Road)}}>Roadmaps</Text>
-            <Text mt="-15px" fontWeight="1200" fontSize="28px">. . . .</Text>
-            <Text cursor="pointer" onClick={()=>setMap(Task)}>Task</Text>
-            <Text mt="-15px" fontWeight="1200" fontSize="28px">. . . .</Text>
-            <Text cursor="pointer" onClick={()=>setMap(discuss)}>Discussions</Text>
-            <Text mt="-15px" fontWeight="1200" fontSize="28px">. . . .</Text>
-            <Text cursor="pointer" onClick={()=>setMap(docs)}>Docs</Text>
-            <Text mt="-15px" fontWeight="1200" fontSize="28px">. . . .</Text>
-            <Text cursor="pointer" onClick={()=>setMap(repo)}>Reporting</Text>
+          <Box className="path">
+            <Text className="temp" onClick={()=>{setMap(Road)}}>Roadmaps</Text>
+            <Text mt="-15px" fontWeight="1200" fontSize="28px" className="temp">. . . .</Text>
+            <Text cursor="pointer" onClick={()=>setMap(Task)} className="temp">Task</Text>
+            <Text mt="-15px" fontWeight="1200" fontSize="28px" className="temp">. . . .</Text>
+            <Text cursor="pointer" onClick={()=>setMap(discuss)} className="temp">Discussions</Text>
+            <Text mt="-15px" fontWeight="1200" fontSize="28px" className="temp">. . . .</Text>
+            <Text cursor="pointer" onClick={()=>setMap(docs)} className="temp">Docs</Text>
+            <Text mt="-15px" fontWeight="1200" fontSize="28px" className="temp">. . . .</Text>
+            <Text cursor="pointer" onClick={()=>setMap(repo)} className="temp">Reporting</Text>
           </Box>
           <Roadmaping maps={map}/>
         </Box>

@@ -2,7 +2,7 @@ import {
     Box,Text,
   } from "@chakra-ui/react";
   import "./getDemo.css"
-  
+  import "./roadmap.css"
   import { useState,useEffect } from "react";
   import Roadmaping from "./roadmapingtwo";
   const Eng=[
@@ -82,16 +82,16 @@ import {
           >
             <Box display="flex" w="80%" m="auto"  alignItems={"cneter"} gap="20px" fontWeight="600" fontSize="20px">
               <Text className="temp" cursor="pointer" onClick={()=>{setMap(Eng)}}>Engineering</Text>
-              <Text mt="-15px" fontWeight="1200" fontSize="28px">. . . .</Text>
-              <Text cursor="pointer" onClick={()=>setMap(s)}>Sales</Text>
-              <Text mt="-15px" fontWeight="1200" fontSize="28px">. . . .</Text>
-              <Text cursor="pointer" onClick={()=>setMap(m)}>Marketing</Text>
-              <Text mt="-15px" fontWeight="1200" fontSize="28px">. . . .</Text>
-              <Text cursor="pointer" onClick={()=>setMap(p)}>Product</Text>
-              <Text mt="-15px" fontWeight="1200" fontSize="28px">. . . .</Text>
-              <Text cursor="pointer" onClick={()=>setMap(c)}>Clint Management</Text>
-              <Text mt="-15px" fontWeight="1200" fontSize="28px">. . . .</Text>
-              <Text cursor="pointer" onClick={()=>setMap(i)}>IT</Text>
+              <Text mt="-15px" fontWeight="1200" fontSize="28px"className="temp">. . . .</Text>
+              <Text cursor="pointer" onClick={()=>setMap(s)} className="temp">Sales</Text>
+              <Text mt="-15px" fontWeight="1200" fontSize="28px" className="temp">. . . .</Text>
+              <Text cursor="pointer" onClick={()=>setMap(m)} className="temp">Marketing</Text>
+              <Text mt="-15px" fontWeight="1200" fontSize="28px" className="temp">. . . .</Text>
+              <Text cursor="pointer" onClick={()=>setMap(p)} className="temp">Product</Text>
+              <Text mt="-15px" fontWeight="1200" fontSize="28px" className="temp">. . . .</Text>
+              <Text cursor="pointer" onClick={()=>setMap(c)} className="temp">Clint Management</Text>
+              <Text mt="-15px" fontWeight="1200" fontSize="28px" className="temp">. . . .</Text>
+              <Text cursor="pointer" onClick={()=>setMap(i)} className="temp">IT</Text>
             </Box>
             <Roadmaping maps={map}/>
           </Box>

@@ -14,18 +14,29 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+import { useState } from "react";
 export const Buttons = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [data, setData] = useState({email:"",name:"",password:""});
   // const { isOpens, onOpens, onCloses } = useDisclosure();
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
+// console.log(data)
+ 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    localStorage.setItem("userData",JSON.stringify(data));
+    
+  };
   return (
     <Box display="flex" gap="20px" fw="large">
-      <Link to="/login"><Button br="10px" w="90px">
-        Login
-      </Button></Link>
-      
+      <Link to="/login">
+        <Button br="10px" w="90px">
+          Login
+        </Button>
+      </Link>
+
       <Button onClick={onOpen} br="10px" w="90px" bg="#00baab" color="white">
         SignUp
       </Button>
@@ -64,14 +75,22 @@ export const Buttons = () => {
                 mb={5}
                 ref={initialRef}
                 placeholder="Name@company.com"
+                onChange={(e)=> setData({...data,email:e.target.value})}
               />
               <Input
                 h="50px"
                 type="text"
                 ref={initialRef}
                 placeholder="Full Name"
+                onChange={(e)=> setData({...data,name:e.target.value})}
               />
-              <Input h="50px" type="password" mt={5} placeholder="Password" />
+              <Input
+                h="50px"
+                onChange={(e)=> setData({...data,password:e.target.value})}
+                type="password"
+                mt={5}
+                placeholder="Password"
+              />
             </FormControl>
             <Box mt={5} textAlign="center" fontWeight={600}>
               OR
@@ -98,7 +117,7 @@ export const Buttons = () => {
           </ModalBody>
 
           <ModalFooter>
-            <Button m="auto" w="100%" colorScheme="blue">
+            <Button onClick={handleSubmit} m="auto" w="100%" colorScheme="blue">
               Get Started
             </Button>
             {/* <Button onClick={onClose}>Cancel</Button> */}
@@ -116,20 +135,21 @@ export const ButtonL = () => {
   const finalRef = React.useRef(null);
   return (
     <Box display="flex" gap="20px" fw="large">
-      <Button  onClick={onOpen}  br="10px" w="90px">
-        Login
-      </Button>
+      {/* <Link to="/login">
+        <Button onClick={onOpen} br="10px" w="90px">
+          Login
+        </Button>
+      </Link> */}
       <Modal
         initialFocusRef={initialRef}
         finalFocusRef={finalRef}
         isOpen={isOpen}
         onClose={onClose}
         size="full"
-       
       >
         <ModalOverlay />
-        
-        <ModalContent >
+
+        <ModalContent>
           <Image
             Src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg"
             alt="NiftyPm"

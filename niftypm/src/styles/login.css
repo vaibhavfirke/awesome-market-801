@@ -1,0 +1,27 @@
+.Leftsection{
+    width: 50%;
+    height: 100%;
+    padding: 35px;
+}
+.Rightsection{
+    padding: 35px;
+    background-color: white;
+    width: 50%;
+    box-shadow:rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+
+    
+}
+.parent{
+    width: 72%;
+    height: 650px;
+    box-shadow:rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+border-radius:15px ;
+    margin: auto;
+    display: flex;
+}
+.hed1{
+    display: flex;
+gap: 15px;
+align-items: center;
+margin-bottom: 30px;
+}

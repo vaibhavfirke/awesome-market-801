@@ -8,98 +8,14 @@
     margin: auto;
     justify-content: center;
     position: absolute;
-    top: 150px;
+    top: -20px;
     bottom: 0;
     right: 0;
     left:50%;
 
 }
+
 .circle1{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    overflow: hidden;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    
-    -webkit-animation: circle 15s infinite;
-    animation: circle 15s linear infinite;
-}
-.circle2{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    overflow: hidden;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    
-    -webkit-animation: circle 17s infinite;
-    animation: circle 17s linear infinite;
-}
-.circle3{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    overflow: hidden;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    
-    -webkit-animation: circle 18s infinite;
-    animation: circle 18s linear infinite;
-}
-.circle4{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    overflow: hidden;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    
-    -webkit-animation: circle 15.5s infinite;
-    animation: circle 15.5s linear infinite;
-}
-.circle5{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    overflow: hidden;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    
-    -webkit-animation: circle 14.5s infinite;
-    animation: circle 14.5s linear infinite;
-}
-.circle6{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -116,7 +32,7 @@
     -webkit-animation: circle 14s infinite;
     animation: circle 14s linear infinite;
 }
-.circle7{
+.circle2{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -133,7 +49,7 @@
     -webkit-animation: circle 15s infinite;
     animation: circle 15s linear infinite;
 }
-.circle8{
+.circle3{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -149,6 +65,91 @@
     
     -webkit-animation: circle 16s infinite;
     animation: circle 16s linear infinite;
+}
+.circle4{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    
+    -webkit-animation: circle 17s infinite;
+    animation: circle 17s linear infinite;
+}
+.circle5{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    
+    -webkit-animation: circle 18s infinite;
+    animation: circle 18s linear infinite;
+}
+.circle6{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    
+    -webkit-animation: circle 19s infinite;
+    animation: circle 19s linear infinite;
+}
+.circle7{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    
+    -webkit-animation: circle 15.5s infinite;
+    animation: circle 15.5s linear infinite;
+}
+.circle8{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    
+    -webkit-animation: circle 16.5s infinite;
+    animation: circle 16.5s linear infinite;
 }
 @-webkit-keyframes circle{
     0%{
@@ -225,23 +226,26 @@
     height: 30px;
 }
 .tag1{
-    top: 150px;
-   right: 300px;
+    top: 200px;
+   right: 270px;
 }
 .tag2{
     top: 290px;
-    right: 120px;
+    right: 100px;
 }
 .tag3{
     top: 290px;
-    right: 490px;
+    right: 420px;
 }
 .tag4{
-    top: 440px;
-    right: 440px;
+    top: 500px;
+    right: 420px;
     width: 100px;
 }
 .tag5{
-    top: 440px;
-    right: 170px;
+    top: 500px;
+    right: 130px;
+}
+.play:hover{
+    border: 1px solid #03b6a7;
 }

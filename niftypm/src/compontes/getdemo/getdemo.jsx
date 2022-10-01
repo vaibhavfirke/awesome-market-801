@@ -13,6 +13,7 @@ import Roadmapone from "./rodemapone"
 import Roadmaptwo from "./roadmaptwo"
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import { useState } from "react";
+import "./getDemo.css"
 export default function GetDemo() {
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
@@ -33,9 +34,10 @@ export default function GetDemo() {
             background="white"
             borderRadius="50%"
             position="absolute"
+            className="play" 
           >
             {" "}
-            <PlayArrowIcon fontSize="large" color="primary" />
+            <PlayArrowIcon style={{fontSize:"50px", color:"blue" }} />
           </Button>
         </Box>
         <Image
@@ -139,6 +141,19 @@ They have consolidated so many tools down to one for my team, without compromisi
 
 </Box>
 <Animation/>
+<Box m ="auto" mt="80px" w="93%" display="flex" justifyContent="space-between"  >
+  <Box>
+    <Text mb="15px" fontWeight={500} color="#00baab">DON’T TAKE OUR WORD FOR IT</Text>
+<Heading fontSize={50} >Nifty is acclaimed for its <br />
+design and performance ✨</Heading>
+  </Box>
+  <Box w="20%">
+    <Image src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=330952&theme=light" alt="product hint"></Image>
+  </Box>
+
+  
+</Box>
+
     </Box>
   );
 }

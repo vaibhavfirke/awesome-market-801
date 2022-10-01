@@ -23,9 +23,9 @@ function Navbar() {
                 <KeyboardArrowDownIcon />
               </p>
             </span>
-            <div class="dropdown-content">
+            <div className="dropdown-content">
               <h1>❤ Learn how Nifty inspires productivity!</h1>
-              <div className="parent">
+              <div className="Parent">
                 <div className="child1">
                   <p>Discussions </p> <p>Tasks</p> <p>Time Tracking</p>{" "}
                   <p>Project Home</p>
@@ -46,9 +46,9 @@ function Navbar() {
                 <KeyboardArrowDownIcon />
               </p>
             </span>
-            <div class="dropdown-content2">
+            <div className="dropdown-content2">
               <h1>❤ Nifty is very flexible. Here are a few examples of how you can use it.</h1>
-              <div className="parent">
+              <div className="Parent">
                 <div className="child1">
                   <p>Agile Development </p> <p>Client Management</p>{" "}
                   <p>Digital Agencies</p>
@@ -69,8 +69,8 @@ function Navbar() {
                 <KeyboardArrowDownIcon />
               </p>
             </span>
-            <div class="dropdown-content3">
-              <div className="parent">
+            <div className="dropdown-content3">
+              <div className="Parent">
                 <div className="child1">
                   <p>Apps</p> <p>Blog</p> <p>Integrations</p>
                 </div>

@@ -31,10 +31,12 @@ font-size: large;
 
 .dropdown-content {
     margin: auto;
+    
     display: none;
     position: absolute;
     background-color: #ffffff;
     min-width: 460px;
+    
     padding-top: 20px;
     box-shadow: 0px 8px 16px 0px rgba(59, 59, 59, 0.4);
     padding-left: 25px;
@@ -58,6 +60,7 @@ font-size: large;
     position: absolute;
     background-color: #ffffff;
     min-width: 640px;
+    height: 210px;
     padding-top: 20px;
     box-shadow: 0px 8px 16px 0px rgba(59, 59, 59, 0.4);
     padding-left: 25px;
@@ -79,6 +82,7 @@ font-size: large;
     margin: auto;
     display: none;
     position: absolute;
+    height: 180px;
     background-color: #ffffff;
     min-width: 450px;
     padding-top: 20px;
@@ -108,7 +112,7 @@ font-size: large;
 .content {
     display: flex;
     margin: auto;
-
+   
     height: 70px;
     width: 94%;
     align-items: center;
@@ -142,16 +146,18 @@ font-size: large;
     gap: 20px;
 }
 
-.parent {
+.Parent {
     display: flex;
     justify-content: space-between;
     font-size: large;
     column-gap: 15px;
-
+    border:"1px solid green";
+    z-index:5;
+    
 }
 
-.parent p {
-
+.Parent p {
+   
     display: flex;
     flex-direction: column;
     column-gap: 20px;
@@ -160,7 +166,7 @@ font-size: large;
     font-weight: 500;
 }
 
-.parent p:hover {
+.Parent p:hover {
     cursor: pointer;
     color: #00baab;
 }

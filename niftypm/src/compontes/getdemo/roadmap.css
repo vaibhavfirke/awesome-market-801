@@ -1,0 +1,14 @@
+.path {
+    display:flex;
+     justify-content:center ;
+     align-items: cneter;
+      gap:20px;
+       font-weight: 600;
+        font-size:20px;
+
+}
+.temp:hover{
+color:#0edac9 ;
+}
+
+/* display="flex" justifyContent="center" alignItems={"cneter"} gap="20px" fontWeight="600" fontSize="20px" */

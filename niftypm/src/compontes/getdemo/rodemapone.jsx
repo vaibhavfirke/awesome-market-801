@@ -1,17 +1,12 @@
 import {
   Box,
-  Image,
-  Button,
-  Heading,
   Text,
-  Input,
-  InputRightElement,
-  InputGroup,
+  
 } from "@chakra-ui/react";
-import { color, style } from "@mui/system";
+
 import { useState,useEffect } from "react";
-import { NavLink,link, useLoaderData } from "react-router-dom";
-import Roadmaping from "./roadmap";
+
+import Roadmaping from "./roadmapingone";
 const Road=[
    {heading:"Set Goals & Timelines",
     cont:`Set a visual timeline for your big-picture goals and build team alignment by automating progress as tasks are completed.Learn more `,
@@ -46,7 +41,6 @@ const repo=[
 
 export default function Roadmap() {
     const [map,setMap]=useState(Road);
-    const [road,setRoad]=useState(true);
 useEffect(()=>{
 },[map])
 
@@ -59,21 +53,22 @@ useEffect(()=>{
         <Box
           w="90%"
           m="auto"
+          pt="55px"
           borderRadius={"15px"}
-          bgGradient="linear(to-r, blue.50, pink.50)"
+          bgGradient="linear(to-r, blue.100, pink.100)"
         >
           <Box display="flex" justifyContent="center" alignItems={"cneter"} gap="20px" fontWeight="600" fontSize="20px">
-            <Text onClick={()=>setMap(Road)}>Roadmaps</Text>
+            <Text className="temp" cursor="pointer" onClick={()=>{setMap(Road)}}>Roadmaps</Text>
             <Text mt="-15px" fontWeight="1200" fontSize="28px">. . . .</Text>
-            <Text onClick={()=>setMap(Task)}>Task</Text>
+            <Text cursor="pointer" onClick={()=>setMap(Task)}>Task</Text>
             <Text mt="-15px" fontWeight="1200" fontSize="28px">. . . .</Text>
-            <Text onClick={()=>setMap(discuss)}>Discussions</Text>
+            <Text cursor="pointer" onClick={()=>setMap(discuss)}>Discussions</Text>
             <Text mt="-15px" fontWeight="1200" fontSize="28px">. . . .</Text>
-            <Text onClick={()=>setMap(docs)}>Docs</Text>
+            <Text cursor="pointer" onClick={()=>setMap(docs)}>Docs</Text>
             <Text mt="-15px" fontWeight="1200" fontSize="28px">. . . .</Text>
-            <Text onClick={()=>setMap(repo)}>Reporting</Text>
+            <Text cursor="pointer" onClick={()=>setMap(repo)}>Reporting</Text>
           </Box>
-<Roadmaping maps={map}/>
+          <Roadmaping maps={map}/>
         </Box>
       </Box>
     </Box>

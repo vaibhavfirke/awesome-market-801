@@ -1,6 +1,7 @@
 import "../styles/navbar.css";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import{ Buttons}from "./buttons"
+import{ Buttons, ButtonL}from "./buttons"
+import {Link} from "react-router-dom"
 function Navbar() {
   return (
     <div className="navbar">
@@ -83,10 +84,12 @@ function Navbar() {
           </div>
           <div className="head1">Got Clients?</div>
           <div className="head1">Pricing</div>
-          <div className="head1" style={{color:"#00baab"}}>Get Demo</div>
+         <Link to="/"> <div className="head1" style={{color:"#00baab"}}> Get Demo </div></Link>
         </div>
         <div className="right">
+       
          <Buttons/>
+         
           
         </div>
       </div>

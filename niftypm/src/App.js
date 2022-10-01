@@ -6,9 +6,9 @@ import Home from "./compontes/home"
 function App() {
   return (
     <div className="App">
-    {/* <Footer/> */}
     {/* <Navbar/> */}
     <Home/>
+    {/* <Footer/> */}
     
     </div>
   );

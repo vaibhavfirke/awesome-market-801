@@ -8,6 +8,9 @@ import {
   InputRightElement,
   InputGroup,
 } from "@chakra-ui/react";
+import Animation from "./Animation";
+import Roadmapone from "./rodemapone"
+import Roadmaptwo from "./roadmaptwo"
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import { useState } from "react";
 export default function GetDemo() {
@@ -19,15 +22,17 @@ export default function GetDemo() {
         w="100%"
         bgGradient="linear(#f3f6fa,#ececee, #fbf8f9)"
         m="auto"
-        pt="30px"
+        pt="110px"
+       
       >
-        <Box position="absolute" top="80px" left="47%">
+        <Box position="absolute" top="150px" left="47%">
           <Button
             bg="#EDF2F7"
             w="100px"
             h="100px"
             background="white"
             borderRadius="50%"
+            position="absolute"
           >
             {" "}
             <PlayArrowIcon fontSize="large" color="primary" />
@@ -80,7 +85,7 @@ export default function GetDemo() {
           h="55px"
           borderRadius="7px"
           display="flex"
-          mt="20px"
+          mt="30px"
           justifyContent="center"
         cursor="pointer"
          
@@ -111,9 +116,29 @@ export default function GetDemo() {
     <br/>
     <Text textAlign="center" fontSize="18px" fontWeight="700" color="#acbad0" mt="35px" mb="20px">SAY GOODBYE TO STATUS MEETINGS</Text>
 <br />
- 
+ <Roadmapone/>
+ <Text mt="100px" mb="100px" fontWeight={600} color="#808ea3" textAlign="center">BUILT FOR  EVERY TEAM</Text>
 </Box>
+<Roadmaptwo/>
+<Box w='100%' mt="160px" pt="150px" pb="100px" bgGradient='linear(blue.100,red.50)'>
 
+<Box
+  w='75%' 
+   m="auto" textAlign="center" pb="30px"  borderRadius="18px"
+  bgGradient='linear(to-r, yellow.300, red.100, blue.500)' alignItems="center"
+>
+  <Text w="68%"m="auto" mb="80px" fontSize={30} fontFamily="volkhow,sans-serif" pt="100px">Nifty is by far the best productivity tool I've ever used. <br />
+They have consolidated so many tools down to one for my team, without compromising the experience.</Text>
+<Text fontWeight={700}>RIM N. KAY
+</Text>
+<Text mt="10px" fontWeight={600}>ENGINEERING LEAD, EMOVIS</Text>
+</Box>
+</Box>
+<Text fontWeight={600}  mt="100px" mb="100px" textAlign="center">POWERFUL UNIFICATION</Text>
+<Box className="animation">
+
+</Box>
+<Animation/>
     </Box>
   );
 }

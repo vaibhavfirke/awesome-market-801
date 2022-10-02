@@ -273,29 +273,29 @@ function Animation() {
           <div className="dot1">
             <div className="dot2">
               <div className="dot3">
-                <img src="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" alt="" srcset="" />
+                <img src="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" alt="niftypm" />
               </div>
             </div>
           </div>
         </div>
         <div className="tag1">
-            <img src="https://niftypm.com/_nuxt/img/developer.c4e1e2e.png" alt="" srcset="" />
+            <img src="https://niftypm.com/_nuxt/img/developer.c4e1e2e.png" alt="developer"  />
             <p>Developers</p>
         </div>
         <div className="tag2">
-            <img src="https://niftypm.com/_nuxt/img/designer.197ec7b.png" alt="" srcset="" />
+            <img src="https://niftypm.com/_nuxt/img/designer.197ec7b.png" alt="Disigner"  />
             <p>Designers</p>
         </div>
         <div className="tag3">
-            <img src="https://niftypm.com/_nuxt/img/manager.349f23f.png" alt="" srcset="" />
+            <img src="https://niftypm.com/_nuxt/img/manager.349f23f.png" alt="manager" />
             <p>Managers</p>
         </div>
         <div className="tag4">
-            <img src="https://niftypm.com/_nuxt/img/sales.44a50d1.png" alt="" srcset="" />
+            <img src="https://niftypm.com/_nuxt/img/sales.44a50d1.png" alt="sales"  />
             <p>Sales</p>
         </div>
         <div className="tag5">
-            <img src="https://niftypm.com/_nuxt/img/marketing.3d9697e.png" alt="" srcset="" />
+            <img src="https://niftypm.com/_nuxt/img/marketing.3d9697e.png" alt="marketing"  />
             <p>Marketing</p>
         </div>
       </Box>

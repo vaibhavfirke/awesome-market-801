@@ -7,12 +7,14 @@ function Navbar() {
     <div className="navbar">
       <div className="content">
         <div className="left">
+          <Link to="/">
           <img
             src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg"
             alt="niftypm"
             width="100px"
             heigth="100px"
           />
+          </Link>
         </div>
         <div className="middle">
           <div className="dropdown">

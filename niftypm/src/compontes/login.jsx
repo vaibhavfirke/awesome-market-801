@@ -10,6 +10,7 @@ import {
   FormHelperText,
   FormLabel,
 } from "@chakra-ui/react";
+
 import "../styles/login.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -18,6 +19,7 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const data = JSON.parse(localStorage.getItem("userData"));
+  
   const handleInputChange = (e) => {
     setEmail(e.target.value);
     console.log(email);
@@ -29,20 +31,27 @@ function Login() {
   console.log(email, password);
   const isError = email === "";
   const isErrorP = password === "";
-
+const [alt,setalt]=useState(true)
   const handleSubmit = (e) => {
     e.preventDefault();
    
+
+
     if (data.email === email && data.password === password) {
       alert("Login Successfull ...");
+      setalt(true)
       navigate("/main");
+    }else{
+      alert("Enter correct Details")
     }
   };
   return (
     <>
+   
       <Box
         w="100%"
         m="auto"
+        pt="80px"
         borderRadius="15px"
         bgGradient="linear(to-r, blue.50, pink.50 ,yellow.50)"
       >

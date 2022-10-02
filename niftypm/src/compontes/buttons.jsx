@@ -16,7 +16,9 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 export const Buttons = () => {
+  const navigate = useNavigate();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [data, setData] = useState({email:"",name:"",password:""});
   // const { isOpens, onOpens, onCloses } = useDisclosure();
@@ -27,7 +29,8 @@ export const Buttons = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("userData",JSON.stringify(data));
-    
+    alert("Signin Successfull ")
+    navigate("/login")
   };
   return (
     <Box display="flex" gap="20px" fw="large">
@@ -37,7 +40,7 @@ export const Buttons = () => {
         </Button>
       </Link>
 
-      <Button onClick={onOpen} br="10px" w="90px" bg="#00baab" color="white">
+      <Button onClick={onOpen}  br="10px" w="90px" bg="#00baab" color="white">
         SignUp
       </Button>
 
@@ -117,7 +120,7 @@ export const Buttons = () => {
           </ModalBody>
 
           <ModalFooter>
-            <Button onClick={handleSubmit} m="auto" w="100%" colorScheme="blue">
+            <Button onClick={handleSubmit} disabled={data.email===""&&data.name===""&&data.password===""} m="auto" w="100%" colorScheme="blue">
               Get Started
             </Button>
             {/* <Button onClick={onClose}>Cancel</Button> */}

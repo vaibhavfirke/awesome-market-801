@@ -8,9 +8,11 @@ import {
   InputRightElement,
   InputGroup,
 } from "@chakra-ui/react";
+import GetStarted from "./getstarted";
 import Animation from "./Animation";
 import Roadmapone from "./rodemapone"
 import Roadmaptwo from "./roadmaptwo"
+import Footer from "../footer";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import { useState } from "react";
 import "./getDemo.css"
@@ -151,9 +153,10 @@ design and performance ✨</Heading>
     <Image src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=330952&theme=light" alt="product hint"></Image>
   </Box>
 
-  
 </Box>
-
+  <GetStarted />
+  <Box mt="35px" mb="35px">""</Box>
+<Footer />
     </Box>
   );
 }

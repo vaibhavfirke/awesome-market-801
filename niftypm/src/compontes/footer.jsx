@@ -102,9 +102,9 @@ function Footer(){
              <p style={{color:"#929fb2"}}> 2022 © Nifty Technologies, Inc. All rights reserved.</p>
         </Box>
                <Box display="flex" justifyContent="space-between" gap="15px">
-              <LinkedInIcon/>
-              <FacebookIcon/>
-              <TwitterIcon/>
+              <LinkedInIcon />
+              <FacebookIcon />
+              <TwitterIcon />
                </Box>
         </Box>
         </Box>

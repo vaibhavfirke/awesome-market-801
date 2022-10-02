@@ -4,17 +4,14 @@ import {
   AccordionItem,
   AccordionButton,
   AccordionPanel,
-  AccordionIcon,
+  
   Image
 } from "@chakra-ui/react";
 import React from "react";
 import "./getDemo.css";
 import "./roadmap.css";
 import { Radio, RadioGroup } from "@chakra-ui/react";
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import GoogleIcon from '@mui/icons-material/Google';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import AddToDriveOutlinedIcon from '@mui/icons-material/AddToDriveOutlined';
+
 function Animation() {
   const [value, setValue] = React.useState("1");
   return (

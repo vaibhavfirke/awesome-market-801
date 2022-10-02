@@ -1,6 +1,6 @@
 import "../styles/navbar.css";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import{ Buttons, ButtonL}from "./buttons"
+import{ Buttons, }from "./buttons"
 import {Link} from "react-router-dom"
 function Navbar() {
   return (

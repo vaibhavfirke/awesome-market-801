@@ -14,11 +14,11 @@ import Roadmapone from "./rodemapone"
 import Roadmaptwo from "./roadmaptwo"
 import Footer from "../footer";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import { useState } from "react";
+// import { useState } from "react";
 import "./getDemo.css"
 export default function GetDemo() {
-  const [show, setShow] = useState(false);
-  const handleClick = () => setShow(!show);
+  // const [show, setShow] = useState(false);
+  // const handleClick = () => setShow(!show); 
   return (
     <Box>
       <Box

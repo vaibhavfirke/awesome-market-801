@@ -1,4 +1,4 @@
-import { Box, Heading, Button, Input, Text, Stack } from "@chakra-ui/react";
+import { Box,  Button, Input, Text,  } from "@chakra-ui/react";
 import {
   Accordion,
   AccordionItem,
